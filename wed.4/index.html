@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript lecture 1</h1>
+    <p id="gg">Javscript bluh bluh</p>
+    <button onclick="document.getElementById('gg').innerText='Javascript is bluh bluh brero'">Press here to disappear</button>
+    <p id="dt"> Click below to reveal Text</p>
+    <button onclick="document.getElementById('dt').innerText='Revealed'">Click here</button>
+    <p id="dtt"> Click below to reveal Date</p>
+    <button onclick="date()">Show Date</button>
+    <button onclick="turnon()">Click to turn on the bulb</button>
+    <img id="On" src="download.jpeg" alt="">
+    <script>
+        function date(){
+            document.getElementById('dtt').innerHTML=Date()
+
+        }
+        function turnon(){
+            document.getElementById('On').src='light-bulb-2-Custom.jpg'
+        }
+    </script>
+</body>
+</html>
