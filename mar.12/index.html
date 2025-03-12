@@ -6,12 +6,28 @@
     <title>Document</title>
 </head>
 <body>
+    <p>Week 6</p>
+    <p id="asd"></p>
     <h1>Operater in Javascript</h1>
+    <button onclick="abc()">Dont touch me</button>
     <script>
-        let x=12;
+        function abc(){
+            let x=12;
         let j=21;
         let n = x=j;
-        document.getElementById("asd")
+        alert(n)
+        }
+        let v=cs(32,1);
+        function  cs(a,b) {
+            return a+b;
+
+        }
+        const student= {
+            fname:"hamza",
+            lastname: "waqar",
+            addr:"islamabad",
+        };
+        document.getElementById("asd").innerHTML=student.fname + "is :" + student.addr + "country pakistan"
     </script>
 </body>
 </html>
